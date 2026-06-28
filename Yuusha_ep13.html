@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Yuusha Party wo Tsuihou sareta Beast Tamer, Saikyoushu no Nekomimi Shoujo to Deau Capitulo 13</title>
+
+<style>
+
+body{
+background:#111;
+color:white;
+font-family:Arial;
+margin:0;
+text-align:center;
+}
+
+/* HEADER */
+
+header{
+background:#ff0000;
+padding:10px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+/* TITULO HEADER */
+
+.titulo h1{
+font-size:22px;
+margin:0;
+}
+
+.titulo p{
+font-size:12px;
+margin:0;
+}
+
+/* MENU + BUSCADOR */
+
+.nav-derecha{
+display:flex;
+align-items:center;
+gap:20px;
+}
+
+/* MENU */
+.menu{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+font-size:15px;
+font-weight:bold;
+padding:8px 16px;
+border-radius:20px;
+transition:.3s;
+background:rgba(255,255,255,.12);
+}
+
+.menu a:hover{
+background:rgba(255,255,255,.25);
+transform:translateY(-2px);
+}
+
+/* BUSCADOR */
+
+.buscador{
+position:relative;
+}
+
+/* INPUT */
+
+.buscador input{
+padding:8px;
+border:none;
+border-radius:5px;
+width:190px;
+outline:none;
+background:#ffffff;
+color:#000;
+font-size:15px;
+transition:.3s;
+}
+
+.buscador input::placeholder{
+color:#b8b8b8;
+}
+
+.buscador input:focus{
+box-shadow:0 0 10px rgba(255,255,255,.15);
+}
+
+/* RESULTADOS */
+
+.resultado-busqueda{
+position:absolute;
+top:56px;
+left:-80px;
+width:145%;
+max-height:418px;
+overflow-y:auto;
+background:#fbfbfb;
+border-radius:12px;
+overflow:hidden;
+display:none;
+box-shadow:0 5px 15px rgba(0,0,0,.4);
+z-index:999;
+}
+
+/* ITEM */
+
+.item-busqueda{
+display:flex;
+align-items:center;
+gap:12px;
+padding:12px 15px;
+text-decoration:none;
+color:#333;
+transition:.3s;
+}
+
+.item-busqueda img{
+width:55px;
+height:70px;
+object-fit:cover;
+border-radius:8px;
+}
+
+.item-busqueda span{
+font-size:15px;
+font-weight:bold;
+line-height:1.4;
+}
+
+/* HOVER */
+
+.item-busqueda:hover{
+background:#dcdcdc;
+}
+
+/* CONTENEDOR VIDEO */
+
+.video{
+margin-top:40px;
+width:75%;
+max-width:810px;
+margin-left:auto;
+margin-right:auto;
+text-align:left;
+}
+
+/* TITULO DEL ANIME */
+
+.titulo-video{
+font-size:19px;
+font-weight:700;
+line-height:1.4;
+margin-bottom:5px;
+color:white;
+}
+
+/* EPISODIO */
+
+.episodio{
+font-size:14px;
+color:#999;
+margin-bottom:20px;
+}
+
+/* OPCIONES SERVIDOR */
+
+.opciones{
+display:flex;
+margin-bottom:20px;
+width:100%;
+border-radius:6px;
+overflow:hidden;
+}
+
+.opciones button{
+flex:1;
+padding:14px;
+border:none;
+background:#2b3136;
+color:white;
+font-weight:bold;
+cursor:pointer;
+font-size:14px;
+transition:.3s;
+}
+
+.opciones button:hover{
+background:#ff0000;
+}
+
+/* VIDEO MÁS PEQUEÑO */
+
+iframe{
+width:100%;
+height:460px;
+border:none;
+border-radius:8px;
+background:#000;
+box-shadow:0 0 20px rgba(0,0,0,.5);
+}
+
+/* BOTONES */
+
+.controles{
+margin-top:30px;
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.controles a{
+background:#ff0000;
+padding:12px 25px;
+border-radius:8px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+transition:.3s;
+}
+
+.controles a:hover{
+background:#d90000;
+transform:scale(1.05);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.video{
+width:95%;
+}
+
+iframe{
+height:300px;
+}
+
+.titulo-video{
+font-size:16px;
+}
+
+.opciones{
+flex-wrap:wrap;
+}
+
+.opciones button{
+min-width:120px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="titulo">
+<h1>🎌 AnimeLit</h1>
+<p>Ver tus animes favoritos</p>
+</div>
+
+<!-- MENU + BUSCADOR -->
+<div class="nav-derecha">
+
+<nav class="menu">
+<a href="index.html">Inicio</a>
+<a href="directorio.html">Directorio</a>
+</nav>
+
+<div class="buscador">
+
+<input 
+type="text" 
+id="buscarAnime" 
+placeholder="Buscar anime..."
+autocomplete="off"
+>
+
+<!-- Anime 1 -->
+<div class="resultado-busqueda" id="resultadoBusqueda">
+<a href="Yuusha Party wo Tsuihou sareta Beast Tamer, Saikyoushu no Nekomimi Shoujo to Deau.html" class="item-busqueda">
+<img src="Yuusha Party wo Tsuihou sareta Beast Tamer, Saikyoushu no Nekomimi Shoujo to Deau.jpg">
+<span>
+</h3>Yuusha Party wo Tsuihou sareta Beast Tamer, Saikyoushu no Nekomimi Shoujo to Deau</h3>
+</span>
+</a>
+
+<!-- Anime 2 -->
+<a href="Kaisen.html" class="item-busqueda">
+<img src="Jujutsu Kaisen.jpg">
+<span>
+</h3>Jujutsu Kaisen</h3>
+</span>
+</a>
+
+<!-- Anime 3 -->
+<a href="Naruto.html" class="item-busqueda">
+<img src="naruto.jpg">
+<span>
+<h3>Naruto</h3>
+</span>
+</a>
+
+<!-- Anime 4 -->
+<a href="Tomo-chan wa Onnanoko!.html" class="item-busqueda">
+<img src="Tomo-chan wa Onnanoko!.jpg">
+<span>
+</h3>Tomo-chan wa Onnanoko!</h3>
+</span>
+</a>
+
+<!-- Anime 5 -->
+<a href="Tokidoki Bosotto Russia-go de Dereru Tonari no Alya-san.html" class="item-busqueda">
+<img src="Tokidoki Bosotto Russia-go de Dereru Tonari no Alya-san.jpg">
+<span>
+</h3>Tokidoki Bosotto Russia-go de Dereru Tonari no Alya-san</h3>
+</span>
+</a>
+
+<!-- Anime 6 -->
+<a href="The World's Finest Assassin Gets Reincarnated in Another World as an Aristocrat.html" class="item-busqueda">
+<img src="The World's Finest Assassin Gets Reincarnated in Another World as an Aristocrat.jpg">
+<span>
+</h3>The World's Finest Assassin Gets Reincarnated in Another World as an Aristocrat</h3>
+</span>
+</a>
+
+<!-- Anime 7 -->
+<a href="Attack on Titan.html" class="item-busqueda">
+<img src="Attack on Titan.jpg">
+<span>
+</h3>Shingeki no Kyojin</h3>
+</span>
+</a>
+
+<!-- Anime 8 -->
+<a href="Chillin’ in Another World with Level 2 Super Cheat Powers.html" class="item-busqueda">
+<img src="Chillin’ in Another World with Level 2 Super Cheat Powers.jpg">
+<span>
+</h3>Chillin’ in Another World with Level 2 Super Cheat Powers</h3>
+</span>
+</a>
+
+<!-- Anime 9 -->
+<a href="Solo leveling.html" class="item-busqueda">
+<img src="Solo leveling.jpg">
+<span>
+</h3>Solo leveling</h3>
+</span>
+</a>
+
+<!-- Anime 10 -->
+<a href="Seirei Gensouki Spirit Chronicles.html" class="item-busqueda">
+<img src="Seirei Gensouki Spirit Chronicles.jpg">
+<span>
+</h3>Seirei Gensouki Spirit Chronicles</h3>
+</span>
+</a>
+
+<!-- Anime 11 -->
+<a href="My Unique Skill Makes Me OP even at Level 1.html" class="item-busqueda">
+<img src="My Unique Skill Makes Me OP even at Level 1.jpg">
+<span>
+</h3>My Unique Skill Makes Me OP even at Level 1</h3>
+</span>
+</a>
+
+<!-- Anime 12 -->
+<a href="Jitsu wa Ore, Saikyou deshita.html" class="item-busqueda">
+<img src="Jitsu wa Ore, Saikyou deshita.jpg">
+<span>
+</h3>Jitsu wa Ore, Saikyou deshita</h3>
+</span>
+</a>
+
+<!-- Anime 13 -->
+<a href="Isekai Maou to Shoukan Shoujo no Dorei Majutsu.html" class="item-busqueda">
+<img src="Isekai Maou to Shoukan Shoujo no Dorei Majutsu.jpg">
+<span>
+</h3>Isekai Maou to Shoukan Shoujo no Dorei Majutsu</h3>
+</span>
+</a>
+
+</div>
+
+</div>
+
+</header>
+
+<div class="video">
+
+<h1 class="titulo-video">
+Yuusha Party wo Tsuihou sareta Beast Tamer, Saikyoushu no Nekomimi Shoujo to Deau
+</h1>
+
+<p class="episodio">
+Capitulo 13
+</p>
+
+<!-- OPCIONES DE SERVIDOR -->
+
+<div class="opciones">
+
+<button onclick="cambiarVideo(1)">OPCIÓN 1</button>
+<button onclick="cambiarVideo(2)">OPCIÓN 2</button>
+<button onclick="cambiarVideo(3)">OPCIÓN 3</button>
+<button onclick="cambiarVideo(4)">OPCIÓN 4</button>
+
+</div>
+
+<!-- VIDEO -->
+
+<iframe id="reproductor" width="800" height="450"
+src="https://myvidplay.com/e/xao0k0js365b"
+frameborder="0"
+allowfullscreen>
+</iframe>
+
+</div>
+
+<!-- BOTONES -->
+
+<div class="controles">
+
+<a id="anterior">⏮ Capitulo anterior</a>
+
+<a href="Yuusha Party wo Tsuihou sareta Beast Tamer, Saikyoushu no Nekomimi Shoujo to Deau.html">📑 Menú</a>
+
+<a id="siguiente" href="#">⏭ Siguiente Capitulo</a>
+
+</div>
+
+<script>
+
+/* cambiar servidor */
+
+function cambiarVideo(opcion){
+
+let video = document.getElementById("reproductor");
+
+if(opcion == 1){
+video.src = "https://myvidplay.com/e/xao0k0js365b";
+}
+
+if(opcion == 2){
+video.src = "LINK_DEL_VIDEO_2";
+}
+
+if(opcion == 3){
+video.src = "LINK_DEL_VIDEO_3";
+}
+
+if(opcion == 4){
+video.src = "LINK_DEL_VIDEO_4";
+}
+
+}
+
+/* navegación episodios */
+
+let totalCapitulos = 13;
+
+let url = window.location.pathname;
+
+let numero = url.match(/ep(\d+)/);
+
+if(numero){
+
+let ep = parseInt(numero[1]);
+
+let anterior = ep - 1;
+let siguiente = ep + 1;
+
+/* episodio anterior */
+
+if(anterior >= 1){
+document.getElementById("anterior").href = "Yuusha_ep"+anterior+".html";
+}else{
+document.getElementById("anterior").style.display="none";
+}
+
+/* siguiente episodio */
+
+if(siguiente <= totalCapitulos){
+document.getElementById("siguiente").href = "Yuusha_ep"+siguiente+".html";
+}else{
+document.getElementById("siguiente").style.display="none";
+}
+
+}
+
+// BUSCADOR ANIME
+
+const buscador = document.getElementById("buscarAnime")
+
+const cajaResultados = document.getElementById("resultadoBusqueda")
+
+const items = document.querySelectorAll(".item-busqueda")
+
+buscador.addEventListener("keyup", ()=>{
+
+let texto = buscador.value.toLowerCase()
+
+let encontrado = false
+
+items.forEach(item=>{
+
+let nombre = item.innerText.toLowerCase()
+
+if(nombre.includes(texto) && texto !== ""){
+
+item.style.display = "flex"
+encontrado = true
+
+}else{
+
+item.style.display = "none"
+
+}
+
+})
+
+cajaResultados.style.display = encontrado
+? "block"
+: "none"
+
+})
+
+/* CERRAR */
+
+document.addEventListener("click",(e)=>{
+
+if(!document.querySelector(".buscador").contains(e.target)){
+
+cajaResultados.style.display = "none"
+
+}
+
+})
+
+</script>
+
+</body>
+</html>
